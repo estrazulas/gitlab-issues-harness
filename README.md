@@ -1,6 +1,6 @@
-# Agents
+# GitLab Issues Harness
 
-Este arquivo define instruções para uso das skills e dos padrões do projeto.
+Modelo de harness para especificação, download e padronização de issues do GitLab, com templates reutilizáveis para agentes Claude e organização centralizada em `harness/`.
 
 ## Skills a utilizar
 
@@ -79,7 +79,8 @@ Isso criará os diretórios `.claude/skills/` e `.claude/instructions/` com link
 
 A seguir uma visão resumida dos diretórios e arquivos principais deste workspace e o que eles contêm:
 
-- `agents.md`: Este arquivo (documentação das skills e orientações de uso).
+- `README.md`: Este arquivo (visão geral e instruções de uso do projeto).
+- `agents.md`: Instruções detalhadas para uso das skills e padrões do projeto.
 - `baixa-issues.js`: Script utilitário para baixar ou sincronizar issues do GitLab.
 - `caminhos.md`: Descreve fluxos de navegação, telas e perfis — fonte de verdade para caminhos.
 - `package.json`: Dependências e scripts do projeto.
