@@ -23,7 +23,7 @@ Como um **[perfil]**, eu quero que **[funcionalidade]** para que **[beneficio]**
 
 <div align="center">
 
-  <img src="https://git.ifsc.edu.br/-/project/[PROJECT_ID]/uploads/..." alt="Protótipo sugestivo" style="display: block; margin: 0 auto;">
+  <img src="[GITLAB_URL]-/project/[PROJECT_ID]/uploads/..." alt="Protótipo sugestivo" style="display: block; margin: 0 auto;">
   <br>
   <p align="center">
     <b>Figura 1:</b> Protótipo (SUGESTIVO) da funcionalidade.

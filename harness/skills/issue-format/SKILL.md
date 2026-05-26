@@ -38,7 +38,7 @@ Ao receber um pedido de criacao de issue, analise se a funcionalidade descrita *
 8. Usar o template em [assets/issue-template.md](./assets/issue-template.md).
 9. **Analise de completude:** antes de preencher metadados, aplique a analise descrita na secao "Analise de completude (rastreabilidade)" para identificar lacunas de rastreabilidade entre criacao e consumo de informacao.
 10. Preencher metadados e historia de usuario.
-11. Incluir um bloco de prototipo sugestivo padrao logo apos a historia/descricao, com o `src` seguindo o formato `https://{GITLAB_URL}[-/project/{PROJECT_ID}/uploads/...]` e preenchido com o valor real da variavel `PROJECT_ID` do `.env` (nao usar placeholders como `${PROJECT_ID}` — resolver o valor no momento da redacao). Exemplo: `https://git.ifsc.edu.br/-/project/529/uploads/...`.
+11. Incluir um bloco de prototipo sugestivo padrao logo apos a historia/descricao, com o `src` composto a partir das variaveis `GITLAB_URL` e `PROJECT_ID` definidas no `.env`, resolvendo os valores reais no momento da redacao (nao usar placeholders como `${PROJECT_ID}` no src final). Exemplo de resolucao: `https://git.ifsc.edu.br/-/project/529/uploads/...`.
 12. Criar criterios de aceitacao testaveis (sem ambiguidade).
 13. Sempre que forem adicionados ou alterados criterios de aceitacao, revisar e sugerir a criacao ou atualizacao de cenarios de teste correspondentes (por exemplo CT01/CT02), mapeando cada criterio para um ou mais casos de teste.
 14. Criar pelo menos CT01 e CT02 com:

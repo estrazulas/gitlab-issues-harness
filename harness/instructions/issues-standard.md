@@ -11,7 +11,7 @@
 
 ## Placeholder de imagem com valor do .env
 
-- O `src` do bloco de imagem prototipo sugestivo deve vir preenchido com o valor real da variavel `PROJECT_ID` definida no `.env`.
+- O `src` do bloco de imagem prototipo sugestivo deve ser composto a partir das variaveis `GITLAB_URL` e `PROJECT_ID` definidas no `.env`, com os valores reais resolvidos no momento da redacao.
 - Não utilizar placeholders como `${PROJECT_ID}` nem deixar o codigo do projeto em branco — o valor deve ser resolvido no momento da redacao da issue.
 
 ## Idioma
