@@ -98,3 +98,34 @@ A seguir uma visão resumida dos diretórios e arquivos principais deste workspa
 - `.claude/instructions/`: Symlink para `harness/instructions/`.
 
 Use esta seção como referência rápida; consulte os arquivos específicos quando for necessário trabalhar em um item.
+
+## Versionamento independente do diretório `data/`
+
+O diretório `data/` é ignorado pelo `.gitignore` do repositório raiz. Isso permite versioná-lo de forma separada — útil para armazenar as issues geradas em um repositório interno (ex: GitLab) enquanto o código do harness permanece no GitHub.
+
+Para configurar:
+
+```bash
+# 1. Acessar o diretório data
+cd data/
+
+# 2. Inicializar um repositório Git separado
+git init
+
+# 3. Criar um .gitignore específico para data/
+cat > .gitignore << 'EOF'
+.gitkeep
+EOF
+
+# 4. Adicionar a origem remota (substitua pela URL do seu repositório)
+git remote add origin <url-do-repositorio-interno>
+
+# 5. Fazer o primeiro commit
+git add .
+git commit -m "Initial commit - generated issues"
+
+# 6. Enviar para o remoto
+git push -u origin main
+```
+
+A partir daí, use `cd data && git <comando>` para operar o repositório de `data/` e `cd .. && git <comando>` para operar o repositório raiz — ambos funcionam de forma independente e aparecem simultaneamente no editor.
