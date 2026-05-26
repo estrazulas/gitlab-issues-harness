@@ -1,0 +1,6 @@
+.env
+node_modules/
+.claude/settings.local.json
+caminhos.md
+plano-desenvolvimento-issues.md
+data/

@@ -1,0 +1,15 @@
+# Caminhos de Navegação
+
+Tabela consolidada com os caminhos de navegação identificados nas issues em `data/issues_markdown`.
+
+| Perfil / Usuário | Login | Senha | Caminho de navegação | Observação |
+|---|---|---|---|---|
+| [perfil] | [login] | [senha] | [Entrar -> Menu -> Submenu -> Ação] | [observação] |
+| [perfil] | [login] | [senha] | [Entrar -> Menu -> Ação] | [observação] |
+| [perfil] | [login] | [senha] | [Entrar -> Menu -> Submenu -> Ação -> Passo final] | [observação] |
+
+## Observações
+
+- Os caminhos acima são exemplos. Preencha com os dados reais mapeados a partir das issues.
+- Quando um arquivo de issue não trouxer login ou senha claros, mantenha como `não informado`.
+- Use marcadores em colchetes para valores variáveis, ex: `[parametro]`, `[id]`, `[registro]`.

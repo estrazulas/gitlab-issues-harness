@@ -1,0 +1,10 @@
+{
+  "scope": "repo-only",
+  "description": "Configuração local para uso com Claude: aponta para diretórios de skills e instruções que serão links simbólicos.",
+  "skills_dir": ".claude/skills",
+  "instructions_dir": ".claude/instructions",
+  "claude_settings": {
+    "use_symlinks": true,
+    "respect_repo_only": true
+  }
+}

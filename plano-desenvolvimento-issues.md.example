@@ -1,0 +1,32 @@
+# Plano de desenvolvimento - [Nome da Fase/Release]
+
+Data: [YYYY-MM-DD]
+
+## Critérios de priorização
+- [critério 1]
+- [critério 2]
+- [critério 3]
+
+## Plano por fase
+
+### Fase 1 - [Nome da Fase]
+Objetivo: [descrição do objetivo]
+
+| Ordem | Issue | Desenvolvedor | Dependências/Observações |
+|-------|-------|---------------|--------------------------|
+| 1 | [título da issue] | [dev] | [dep ou obs] |
+| 2 | [título da issue] | [dev] | [dep ou obs] |
+| 3 | [título da issue] | [dev] | [dep ou obs] |
+
+### Fase 2 - [Nome da Fase]
+Objetivo: [descrição do objetivo]
+
+| Ordem | Issue | Desenvolvedor | Dependências/Observações |
+|-------|-------|---------------|--------------------------|
+| 1 | [título da issue] | [dev] | [dep ou obs] |
+| 2 | [título da issue] | [dev] | [dep ou obs] |
+
+---
+
+> **Atenção:** Este é um arquivo de exemplo/template. Substitua os placeholders pelos dados reais do seu projeto.
+> Issues referenciadas aqui devem existir no diretório `data/issues_markdown/` com o nome do arquivo correspondente.

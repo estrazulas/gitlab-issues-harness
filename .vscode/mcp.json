@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "gitlab-issues": {
+      "type": "sse",
+      "url": "http://127.0.0.1:8000/sse",
+      "headers": {},
+      "tools": [
+        "list_issues"
+      ]
+    }
+  }
+}
