@@ -53,6 +53,9 @@ Ao receber um pedido de criacao de issue, analise se a funcionalidade descrita *
 18. **Nunca assuma informacao que nao foi fornecida.** Se algo estiver faltando, pergunte explicitamente ao usuario — uma pergunta por vez — antes de prosseguir. Nao preencha lacunas com suposicoes.
 19. Se tiver duvidas antes de decidir sobre o conteudo ou formato, pergunte antes de gerar a issue, **uma pergunta por vez**.
 20. **Apos finalizar a issue**, verificar se novos perfis de acesso foram identificados durante a entrevista que ainda nao constam em `perfis.md`. Se houver, atualizar o arquivo `perfis.md` adicionando os novos perfis a lista. Se `perfis.md` nao existir, cria-lo com base no modelo `perfis.md.example`.
+21. **Referencia cruzada de issues:** Antes de dar a issue como concluída, percorrer todo o texto em busca de referências funcionais a outras issues (ex: "issue 5.1", "conforme issue 1.0.1", "issues 5.1, 5.2 e 5.3"). Para cada uma:
+    - Se o número GitLab (`#nr`) for conhecido, acrescentar o número entre parênteses ao lado da referência funcional, EXEMPLO: `issue 5.1 (#7)`.
+    - Se o número GitLab não for conhecido, perguntar ao usuário para consultar no GitLab antes de finalizar. Nunca deixar o número em branco.
 
 ## Checklist rapido
 - A pergunta sobre perfis de acesso foi feita antes da redacao, consultando `perfis.md` como base.
@@ -61,6 +64,7 @@ Ao receber um pedido de criacao de issue, analise se a funcionalidade descrita *
 - Estrutura completa da issue presente.
 - Criterios de aceitacao observaveis.
 - Sugestoes de notificacao incluidas para criterios que envolvam mensagens, alertas ou feedback ao usuario.
+- Referencias funcionais a outras issues convertidas para o formato `issue X.Y (#nr)`.
 - Casos de teste com passos reproduziveis.
  - Quando criterios de aceitacao forem adicionados ou alterados, sugerir criacao/atualizacao de cenarios de teste.
 - Linguagem objetiva e alinhada com o estilo atual do projeto.

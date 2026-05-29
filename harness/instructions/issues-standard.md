@@ -23,6 +23,8 @@
 
 - Ao referenciar uma issue em links dentro de arquivos `.md`, use sempre o formato com hashtag e número da issue, por exemplo `#7`.
 - Esse formato deve ser mantido para que o GitLab reconheça corretamente a referência automática da issue.
+- Referências funcionais como "issue 5.1", "issue 1.0.1" ou "conforme issue X.Y" **não** geram link automático no GitLab. Por isso, antes de finalizar a issue, toda referência funcional a outras issues deve ter o número GitLab acrescentado entre parênteses ao lado, EXEMPLO: `issue 5.1 (#7)`, `issues 5.1 (#7), 5.2 (#8) e 5.3 (#9)`. Isso mantém a legibilidade funcional e adiciona o vínculo automático do GitLab.
+- Quando o número real da issue no GitLab não for conhecido, o autor deve perguntar ao usuário para consultar antes de finalizar o texto. Nunca deixar o número em branco ou usar placeholder.
 
 ## Symlinks de skills e instruções
 
