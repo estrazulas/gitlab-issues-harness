@@ -40,18 +40,19 @@ Ao receber um pedido de criacao de issue, analise se a funcionalidade descrita *
 10. Preencher metadados e historia de usuario.
 11. Incluir um bloco de prototipo sugestivo padrao logo apos a historia/descricao, com o `src` composto a partir das variaveis `GITLAB_URL` e `PROJECT_ID` definidas no `.env`, resolvendo os valores reais no momento da redacao (nao usar placeholders como `${PROJECT_ID}` no src final). Exemplo de resolucao: `https://git.ifsc.edu.br/-/project/529/uploads/...`.
 12. Criar criterios de aceitacao testaveis (sem ambiguidade).
-13. Sempre que forem adicionados ou alterados criterios de aceitacao, revisar e sugerir a criacao ou atualizacao de cenarios de teste correspondentes (por exemplo CT01/CT02), mapeando cada criterio para um ou mais casos de teste.
-14. Criar pelo menos CT01 e CT02 com:
+13. **Sugestao de notificacao:** Sempre que um criterio de aceitacao determinar exibicao de mensagem, alerta, notificacao ou feedback ao usuario, incluir uma sugestao de notificacao logo abaixo do criterio, especificando tipo, conteudo e comportamento — conforme regra em `harness/instructions/issues-standard.md`.
+14. Sempre que forem adicionados ou alterados criterios de aceitacao, revisar e sugerir a criacao ou atualizacao de cenarios de teste correspondentes (por exemplo CT01/CT02), mapeando cada criterio para um ou mais casos de teste.
+15. Criar pelo menos CT01 e CT02 com:
     - Perfil/Usuario
     - Login/Senha (ou placeholder claro)
     - Pre-condicoes
     - Passos
     - Resultado esperado
-15. Revisar consistencia de termos de menu e nomenclatura funcional.
-16. Escrever sempre em pt-BR com acentuacao correta e grafia padronizada.
-17. **Nunca assuma informacao que nao foi fornecida.** Se algo estiver faltando, pergunte explicitamente ao usuario — uma pergunta por vez — antes de prosseguir. Nao preencha lacunas com suposicoes.
-18. Se tiver duvidas antes de decidir sobre o conteudo ou formato, pergunte antes de gerar a issue, **uma pergunta por vez**.
-19. **Apos finalizar a issue**, verificar se novos perfis de acesso foram identificados durante a entrevista que ainda nao constam em `perfis.md`. Se houver, atualizar o arquivo `perfis.md` adicionando os novos perfis a lista. Se `perfis.md` nao existir, cria-lo com base no modelo `perfis.md.example`.
+16. Revisar consistencia de termos de menu e nomenclatura funcional.
+17. Escrever sempre em pt-BR com acentuacao correta e grafia padronizada.
+18. **Nunca assuma informacao que nao foi fornecida.** Se algo estiver faltando, pergunte explicitamente ao usuario — uma pergunta por vez — antes de prosseguir. Nao preencha lacunas com suposicoes.
+19. Se tiver duvidas antes de decidir sobre o conteudo ou formato, pergunte antes de gerar a issue, **uma pergunta por vez**.
+20. **Apos finalizar a issue**, verificar se novos perfis de acesso foram identificados durante a entrevista que ainda nao constam em `perfis.md`. Se houver, atualizar o arquivo `perfis.md` adicionando os novos perfis a lista. Se `perfis.md` nao existir, cria-lo com base no modelo `perfis.md.example`.
 
 ## Checklist rapido
 - A pergunta sobre perfis de acesso foi feita antes da redacao, consultando `perfis.md` como base.
@@ -59,6 +60,7 @@ Ao receber um pedido de criacao de issue, analise se a funcionalidade descrita *
 - A analise de completude foi aplicada (criacao de nova informacao -> issue de consumo correspondente?).
 - Estrutura completa da issue presente.
 - Criterios de aceitacao observaveis.
+- Sugestoes de notificacao incluidas para criterios que envolvam mensagens, alertas ou feedback ao usuario.
 - Casos de teste com passos reproduziveis.
  - Quando criterios de aceitacao forem adicionados ou alterados, sugerir criacao/atualizacao de cenarios de teste.
 - Linguagem objetiva e alinhada com o estilo atual do projeto.

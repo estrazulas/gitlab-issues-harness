@@ -33,6 +33,15 @@
   - `.claude/instructions/issues-standard.md` → `harness/instructions/issues-standard.md`
 - Para verificar o caminho real: `readlink -f .claude/skills/[nome]/SKILL.md`
 
+## Sugestão de notificação
+
+- Sempre que uma issue definir requisitos que envolvam exibição de mensagens, alertas, notificações ou feedback ao usuário (validações, confirmações, bloqueios, resumos de operação), deve ser incluída uma **sugestão de notificação** logo abaixo do requisito correspondente.
+- A sugestão de notificação deve especificar:
+  - **Tipo:** Modal, toast, alerta inline, item de resumo, etc.
+  - **Conteúdo:** Texto exato ou exemplo do que deve ser exibido ao usuário final.
+  - **Comportamento:** Quando e como a notificação deve aparecer (após salvar, ao carregar a tela, exige confirmação do usuário para fechar, etc.).
+- O objetivo é eliminar dúvidas do desenvolvedor sobre qual texto informar ao usuário final e como a notificação deve se comportar em cada contexto.
+
 ## Mermaid
 
 - Sempre que precisar criar um diagrama Mermaid dentro de um arquivo `.md`, utilize um bloco de código.
