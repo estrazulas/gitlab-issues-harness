@@ -57,6 +57,20 @@ Ao receber um pedido de criacao de issue, analise se a funcionalidade descrita *
     - Se o número GitLab (`#nr`) for conhecido, acrescentar o número entre parênteses ao lado da referência funcional, EXEMPLO: `issue 5.1 (#7)`.
     - Se o número GitLab não for conhecido, perguntar ao usuário para consultar no GitLab antes de finalizar. Nunca deixar o número em branco.
 
+22. **Verificação pós-escrita por 5 sub-agentes:** Após finalizar o texto e aplicar todos os passos anteriores, dispare **5 sub-agentes de verificação em paralelo** (usando a ferramenta Agent) para conferir se todos os itens das seções **Procedimento** e **Checklist rapido** desta skill foram atendidos.
+
+    **Distribuição automática dos lotes:**
+    - Colete todos os itens numerados da seção "Procedimento" (passos 1 a 21) e todos os itens da seção "Checklist rapido".
+    - Distribua os itens **sequencial e igualmente** entre os 5 sub-agentes (ex: itens 1-7, 8-14, 15-21, 22-27, 28-32 , ajustando a quantidade conforme o total atual).
+    - Não fixe os intervalos no texto da skill — o agente principal deve calcular a divisão no momento com base na lista vigente de procedimentos e checklist.
+
+    Cada sub-agente deve examinar o texto final da issue gerada e responder, para cada item do seu lote: `[ATENDIDO]`, `[NÃO SE APLICA]` ou `[DÚVIDA]`, com uma breve justificativa.
+
+    **Processamento dos resultados:**
+    - Compile os retornos em uma tabela consolidada.
+    - Para itens marcados como **ATENDIDO**, apenas confirme e prossiga.
+    - Para itens sinalizados como **NÃO SE APLICA** ou **DÚVIDA**, **pergunte ao usuário** se o item pode ser ignorado ou se é necessário ajustar a issue antes de finalizar. Não assuma que "não se aplica" está correto — valide com o usuário.
+
 ## Checklist rapido
 - A pergunta sobre perfis de acesso foi feita antes da redacao, consultando `perfis.md` como base.
 - Novos perfis identificados foram registrados em `perfis.md` ao final.
