@@ -39,7 +39,11 @@ Ao receber um pedido de criacao de issue, analise se a funcionalidade descrita *
 9. **Analise de completude:** antes de preencher metadados, aplique a analise descrita na secao "Analise de completude (rastreabilidade)" para identificar lacunas de rastreabilidade entre criacao e consumo de informacao.
 10. Preencher metadados e historia de usuario.
 11. Incluir um bloco de prototipo sugestivo padrao logo apos a historia/descricao, com o `src` composto a partir das variaveis `GITLAB_URL` e `PROJECT_ID` definidas no `.env`, resolvendo os valores reais no momento da redacao (nao usar placeholders como `${PROJECT_ID}` no src final). Exemplo de resolucao: `https://git.ifsc.edu.br/-/project/529/uploads/...`.
-12. Criar criterios de aceitacao testaveis (sem ambiguidade).
+12. Criar criterios de aceitacao testaveis (sem ambiguidade), seguindo o **formato padrao de criterios**:
+    - Agrupar os criterios em **secoes tematicas numeradas** (`## 1. Titulo`, `## 2. Titulo`, ...), separadas por `---`.
+    - Dentro de cada grupo, listar os criterios como itens `* **CA 01:**`, `* **CA 02:**` ..., **reiniciando a numeracao CA a cada grupo**.
+    - Quando um criterio envolver mensagem/alerta/feedback ao usuario, **aninhar a sugestao de notificacao logo abaixo dele** (bloco de citacao `>` com Tipo/Conteudo/Comportamento), conforme passo 13.
+    - Referencia de exemplo desse formato: `data/issues_markdown/issue-17-1.10 ...` e o template em [assets/issue-template.md](./assets/issue-template.md).
 13. **Sugestao de notificacao:** Sempre que um criterio de aceitacao determinar exibicao de mensagem, alerta, notificacao ou feedback ao usuario, incluir uma sugestao de notificacao logo abaixo do criterio, especificando tipo, conteudo e comportamento — conforme regra em `harness/instructions/issues-standard.md`.
 14. Sempre que forem adicionados ou alterados criterios de aceitacao, revisar e sugerir a criacao ou atualizacao de cenarios de teste correspondentes (por exemplo CT01/CT02), mapeando cada criterio para um ou mais casos de teste.
 15. Criar pelo menos CT01 e CT02 com:

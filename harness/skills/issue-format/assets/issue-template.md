@@ -17,9 +17,21 @@ Como um **[perfil]**, eu quero que **[funcionalidade]** para que **[beneficio]**
 
 ## Criterios de aceitacao
 
-* [CA 01] [regra verificavel]
-* [CA 02] [regra verificavel]
-* [CA 03] [regra verificavel]
+Organize os criterios em **secoes tematicas numeradas** (`## 1. Titulo do grupo`, `## 2. ...`), separadas por `---`. Dentro de cada grupo, liste os criterios como itens `* **CA 01:**`, `* **CA 02:**` ... reiniciando a numeracao a cada grupo. Quando um criterio envolver mensagem/alerta/feedback ao usuario, aninhe a sugestao de notificacao logo abaixo dele (bloco `>` com Tipo/Conteudo/Comportamento).
+
+## 1. [Titulo do primeiro grupo de criterios]
+* **CA 01:** [regra verificavel]
+* **CA 02:** [regra verificavel]
+    > **Sugestao de notificacao ([contexto]):**
+    > - **Tipo:** [modal | toast | alerta inline | ...]
+    > - **Conteudo:** "[texto exato exibido ao usuario]"
+    > - **Comportamento:** [quando e como a notificacao aparece]
+
+---
+
+## 2. [Titulo do segundo grupo de criterios]
+* **CA 01:** [regra verificavel]
+* **CA 02:** [regra verificavel]
 
 <div align="center">
 
@@ -45,9 +57,9 @@ ou
 
 
 ```csv
-campo;exemplo
-registro1;"valor texto exemplo1"
-registro2;"valor texto exemplo2"
+campo,exemplo
+registro1,"valor texto exemplo1"
+registro2,"valor, com virgula exemplo2"
 ```
 
 ## Casos de Testes
